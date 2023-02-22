@@ -27,7 +27,8 @@ html {
 a {
     color: white;
 }
-ul{
+
+ul {
     list-style: none;
 }
 
@@ -38,57 +39,73 @@ ul{
 .justify-end {
     justify-content: flex-end;
 }
-.justify-center{
+
+.justify-center {
     justify-content: center;
 }
+
 .align-center {
     align-items: center;
     align-content: center;
 }
 
 .btn {
-    padding: 8px 12px;
+    padding: 6px 10px;
     display: inline-block;
-    border: 1px solid white;
+    border: 2px solid white;
     color: white;
     border-radius: 40px;
     text-decoration: none;
     width: fit-content;
+    margin-top: 15px;
+    margin-right: 20px;
 }
-    /* TEXT  */
+.btn:hover {
+    transform: scale(1.1) perspective(1px);
+    transition: .2s;
+    
+  }
+/* TEXT  */
 
 
 .up-text {
     text-transform: uppercase;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
-p{
+p {
     color: var(--grey);
 }
 
-        /* HOVER */
+/* HOVER */
 
-.box-img:hover img{
-    opacity:0.8;
+li a:hover{
+    color: white;
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--accent);
+
 }
-.box-img:hover .play-hover{
+
+.box-img:hover img {
+    opacity: 0.8;
+}
+
+.box-img:hover .play-hover {
     opacity: 1;
 }
-.play-hover{
+
+.play-hover {
     position: absolute;
     bottom: 5px;
-    right:5px;
+    right: 5px;
     width: 50px;
     opacity: 0;
 }
-.play-img{
 
-}
-        /* content */
+/* content */
 
 .wrapped {
     width: 100%;
@@ -106,7 +123,7 @@ p{
 }
 
 
-        /* MAIN */
+/* MAIN */
 
 .main-content {
     width: calc(100% - 230px);
@@ -123,26 +140,30 @@ main {
 }
 
 #calltoaction {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     width: calc(100% - 230px);
     background-color: var(--dark);
     height: 80px;
+    z-index: 3000;
 }
 
 .main-section {
     margin-top: 80px;
 }
-.main-section li{
+
+.main-section li {
     padding: 20px;
     font-size: .8rem;
 
 }
-.main-section a{
+
+.main-section a {
     text-decoration: none;
     color: var(--grey);
 }
+
 #playbar {
     width: 100%;
     height: 90px;
@@ -153,24 +174,28 @@ main {
 .container {
     padding: 15px;
 }
-.container h2{
+
+.container h2 {
     padding: 5px;
     font-size: 200;
 
 }
 
 .row {
-padding: 5px;
+    padding: 5px;
 }
-.col{
+
+.col {
     padding: 5px;
     width: 100%;
     max-width: 200px;
 }
+
 .col img {
     width: 100%;
 }
-.box-img{
+
+.box-img {
     width: 100%;
     display: block;
     position: relative;

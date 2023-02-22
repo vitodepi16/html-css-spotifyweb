@@ -69,7 +69,26 @@ ul{
 p{
     color: var(--grey);
 }
-/* content */
+
+        /* HOVER */
+
+.box-img:hover img{
+    opacity:0.8;
+}
+.box-img:hover .play-hover{
+    opacity: 1;
+}
+.play-hover{
+    position: absolute;
+    bottom: 5px;
+    right:5px;
+    width: 50px;
+    opacity: 0;
+}
+.play-img{
+
+}
+        /* content */
 
 .wrapped {
     width: 100%;
@@ -153,4 +172,6 @@ padding: 5px;
 }
 .box-img{
     width: 100%;
+    display: block;
+    position: relative;
 }

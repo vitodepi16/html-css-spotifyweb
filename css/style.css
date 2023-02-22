@@ -142,6 +142,7 @@ padding: 5px;
 }
 .col{
     padding: 5px;
+    width: 100%;
 }
 .col img {
     width: 100%;

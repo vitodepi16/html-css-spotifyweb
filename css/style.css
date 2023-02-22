@@ -109,18 +109,58 @@ li a:hover{
     opacity: 0;
 }
 
+.leftbar li:hover{
+    border-left: 3px solid var(--accent);
+    padding-left: 10px;
+    cursor: pointer;
+    color: white;
+}
+
 /* LEFT BAR */
+.leftbar{
+    color: var(--grey);
+}
+
 
 .leftbar .svg{
     width: 180px;
     padding: 20px;
 }
+.leftbar li{
+    margin-top: 5px;
+    font-size: .8rem;
+    font-weight: 800;
+}
 .leftbar li img{
     width: 15%;
     padding: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
+.personal-lib{
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.personal-lib h3{
+    color: white;
+}
+.personal-lib li img{
+    width: 50px;
+    margin-left: 0;
+    padding: 0;
+    margin-right: 5px;
+}
+.personal-lib li{
+    margin-top: 15px;
 
+}
+.personal-lib h3{
+    color: var(--grey);
+    font-weight: 900;
+    font-size: 1rem;
+}
+li svg{
+    color: var(--grey);
+}
 /* content */
 
 .wrapped {

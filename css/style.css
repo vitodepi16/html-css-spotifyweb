@@ -65,6 +65,10 @@ ul {
     transition: .2s;
     
   }
+
+.svg{
+    color: white;
+}
 /* TEXT  */
 
 
@@ -103,6 +107,18 @@ li a:hover{
     right: 5px;
     width: 50px;
     opacity: 0;
+}
+
+/* LEFT BAR */
+
+.leftbar .svg{
+    width: 180px;
+    padding: 20px;
+}
+.leftbar li img{
+    width: 15%;
+    padding: 5px;
+    margin-left: 5px;
 }
 
 /* content */

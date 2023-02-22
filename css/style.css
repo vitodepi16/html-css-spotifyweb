@@ -27,6 +27,9 @@ html {
 a {
     color: white;
 }
+ul{
+    list-style: none;
+}
 
 .d-flex {
     display: flex;
@@ -35,7 +38,9 @@ a {
 .justify-end {
     justify-content: flex-end;
 }
-
+.justify-center{
+    justify-content: center;
+}
 .align-center {
     align-items: center;
     align-content: center;
@@ -72,6 +77,9 @@ a {
     background-color: var(--dark);
 }
 
+
+        /* MAIN */
+
 .main-content {
     width: calc(100% - 230px);
     height: 100%;
@@ -98,7 +106,15 @@ main {
 .main-section {
     margin-top: 80px;
 }
+.main-section li{
+    padding: 20px;
+    font-size: .8rem;
 
+}
+.main-section a{
+    text-decoration: none;
+    color: var(--grey);
+}
 #playbar {
     width: 100%;
     height: 90px;

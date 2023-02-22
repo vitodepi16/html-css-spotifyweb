@@ -66,6 +66,9 @@ ul{
     text-align: center;
 }
 
+p{
+    color: var(--grey);
+}
 /* content */
 
 .wrapped {

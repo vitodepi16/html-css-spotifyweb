@@ -55,9 +55,15 @@ ul{
     text-decoration: none;
     width: fit-content;
 }
+    /* TEXT  */
+
 
 .up-text {
     text-transform: uppercase;
+}
+
+.text-center{
+    text-align: center;
 }
 
 /* content */
@@ -123,14 +129,20 @@ main {
 
 
 .container {
-    border: 1px solid white;
     padding: 15px;
+}
+.container h2{
+    padding: 5px;
+    font-size: 200;
+
 }
 
 .row {
-    border: 1px solid white;
+padding: 5px;
 }
-
+.col{
+    padding: 5px;
+}
 .col img {
     width: 100%;
 }

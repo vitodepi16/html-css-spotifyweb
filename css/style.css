@@ -180,18 +180,22 @@ li svg{
 #profile span{
     color: var(--grey);
     margin-left: 5px;
-    font-size: .8rem;    
+    font-size: .9rem;    
+}
+.info-p{
+    width: 100%;
+    height: 100px;
 }
 .download, .info-p img{
     width: 30px;
     margin-left:10px;
 }
 .box-profile{
-    width: 10%;
+    width: 100%;
 }
 .img-profile{
-    height: 10vw;
-    width: 100%;
+    height: 10vh;
+    width: 10%;
     border-radius: 100%;
     overflow: hidden;
 }
@@ -288,6 +292,19 @@ main {
     width: 100%;
     display: block;
     position: relative;
+}
+#popolar-artist .box-img{
+    height: 220px;
+    width: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+
+#poplar-artist .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 

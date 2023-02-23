@@ -176,6 +176,7 @@ li svg{
     color: var(--grey);  
     bottom: 120px; 
     position: absolute;
+    padding: 10px;
 }
 #profile span{
     color: var(--grey);
@@ -186,17 +187,19 @@ li svg{
     width: 100%;
     height: 100px;
 }
-.download, .info-p img{
-    width: 30px;
-    margin-left:10px;
+.download  img{
+    width:30px;
+}
+.download span{
+    width: 200px;
 }
 .box-profile{
     width: 100%;
 }
 .img-profile{
-    height: 10vh;
-    width: 10%;
-    border-radius: 100%;
+    height: 80px;
+    width: 80px;
+    border-radius: 80%;
     overflow: hidden;
 }
 .img-profile img{

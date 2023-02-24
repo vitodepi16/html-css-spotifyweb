@@ -36,6 +36,9 @@ ul {
     display: flex;
 }
 
+.space-between{
+    justify-content: space-between;
+}
 .justify-end {
     justify-content: flex-end;
 }
@@ -115,7 +118,15 @@ li a:hover{
     cursor: pointer;
     color: white;
 }
-
+i{
+    color: var(--grey);
+}
+i:hover{
+    color: white;
+}
+span:hover{
+    text-decoration: underline;
+}
 /* LEFT BAR TOP */
 .leftbar{
     color: var(--grey);
@@ -138,9 +149,11 @@ li a:hover{
 .personal-lib{
     margin-top: 10px;
     padding-left: 10px;
-    height: 300px;
+    min-height: 300px;
     overflow-y: scroll;
     scrollbar-color: var(--grey);
+    display: flex;
+    flex-flow: column nowrap;
 }
 .personal-lib h4{
     color: var(--grey);
@@ -182,15 +195,19 @@ li svg{
     position: absolute;
     padding: 5px;
     overflow-y: auto;
+    
 }
 #profile span{
     color: var(--grey);
     margin-left: 5px;
-    font-size: .9rem;    
+    font-size: .9rem;  
+    cursor: pointer;
+
 }
 .info-p{
     width: 100%;
     height: 100px;
+
 }
 .download  img{
     width:30px;
@@ -319,4 +336,63 @@ main {
 
 /* BOTTOM BAR */
 
+.name-song{
+    width: 236px;
+    height: 90px;
+    cursor: pointer;
 
+}
+.ctn-namesong h4{
+    margin-left: 15px;
+    font-size: .9rem;
+}
+.ctn-namesong span{
+    margin-left: 15px;
+    font-size: .8rem;
+}
+.ctn-song {
+    padding: 10px;
+}
+.ctn-namesong{
+    width: 700px;
+}
+.ctn-namesong i{
+    margin-left: 5px;
+}
+.ctn-song img{
+    width: 100%;
+}
+.central-bar{
+    width: 40%;
+    height: 90px;
+    border: 1px solid red;
+}
+
+/* RIGHT SIDE BOTTOM BAR */
+
+.tools-bar{
+    width: 236px;
+    height: 90px;
+}
+.icon i{
+    margin-left: 10px;
+    padding: 5px;
+    color: var(--grey);
+    font-size: .8rem;
+}
+
+.icon i:hover{
+    color: white;
+}
+#myinput {
+    background: linear-gradient(to right, #ADFF2F 0%, #ADFF2F 50%, #fff 50%, #fff 100%);
+    border: solid 1px #82CFD0;
+    border-radius: 8px;
+    height: 7px;
+    width: 50%;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+    margin-top: 8px;
+  }
+  

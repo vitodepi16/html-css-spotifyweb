@@ -35,7 +35,10 @@ ul {
 .d-flex {
     display: flex;
 }
-
+.d-column{
+    display: flex;
+    flex-direction: column;
+}
 .space-between{
     justify-content: space-between;
 }
@@ -126,6 +129,13 @@ i:hover{
 }
 span:hover{
     text-decoration: underline;
+    cursor: pointer;
+}
+.circle{
+transition: transform .2s;
+}
+.circle:hover{
+    transform: scale(2) ;
 }
 /* LEFT BAR TOP */
 .leftbar{
@@ -365,7 +375,28 @@ main {
 .central-bar{
     width: 40%;
     height: 90px;
-    border: 1px solid red;
+}
+
+/* CENTRAL PLAYBAR */
+.action-button i{
+    padding: 10px;
+}
+.playbarbig span{
+    color: var(--grey);
+    margin: 10px;
+    font-size: .8rem;
+}
+
+#track{
+    background: linear-gradient(to right, #ADFF2F 0%, #ADFF2F 50%, #fff 50%, #fff 100%);
+ 
+    border-radius: 8px;
+    height:8px;
+    width: 80%;
+    outline: none;
+    /* transition: background 450ms ease-in; */
+    -webkit-appearance: none;
+    margin-top: 15px;
 }
 
 /* RIGHT SIDE BOTTOM BAR */
@@ -384,9 +415,9 @@ main {
 .icon i:hover{
     color: white;
 }
-#myinput {
+#volume {
     background: linear-gradient(to right, #ADFF2F 0%, #ADFF2F 50%, #fff 50%, #fff 100%);
-    border: solid 1px #82CFD0;
+
     border-radius: 8px;
     height: 7px;
     width: 50%;

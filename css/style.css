@@ -137,6 +137,13 @@ transition: transform .2s;
 .circle:hover{
     transform: scale(2) ;
 }
+
+#track:hover {
+    opacity: 2; 
+  }
+  #volume:hover {
+    opacity: 2; 
+  }
 /* LEFT BAR TOP */
 .leftbar{
     color: var(--grey);
@@ -159,8 +166,8 @@ transition: transform .2s;
 .personal-lib{
     margin-top: 10px;
     padding-left: 10px;
-    min-height: 300px;
-    overflow-y: scroll;
+    min-height: 150px;
+    overflow-y: auto;
     scrollbar-color: var(--grey);
     display: flex;
     flex-flow: column nowrap;
@@ -201,11 +208,11 @@ li svg{
 }
 #profile{
     color: var(--grey);  
-    bottom: 80px; 
+    bottom: 90px; 
     position: absolute;
-    padding: 5px;
     overflow-y: auto;
-    
+    background-color: var(--dark);
+    width: 220px;
 }
 #profile span{
     color: var(--grey);
@@ -350,6 +357,7 @@ main {
     width: 236px;
     height: 90px;
     cursor: pointer;
+    background-color: var(--dark-grey);
 
 }
 .ctn-namesong h4{
@@ -389,13 +397,13 @@ main {
 
 #track{
     background: linear-gradient(to right, #ADFF2F 0%, #ADFF2F 50%, #fff 50%, #fff 100%);
- 
     border-radius: 8px;
     height:8px;
     width: 80%;
     outline: none;
     -webkit-appearance: none;
     margin-top: 15px;
+    opacity: .8;
 }
 
 /* RIGHT SIDE BOTTOM BAR */
@@ -424,6 +432,77 @@ main {
     transition: backgroud 450ms ease-in;
     -webkit-appearance: none;
     margin-top: 8px;
+    opacity: .8;
+
+    
+  }
+
+
+
+  /* MEDIA */
+
+  @media  screen and (max-width: 1200px){
+    .col{
+        width: calc(100% / 4);
+    }
+    #profile{
+        display: none;
+    }
     
   }
   
+  @media screen and (max-width: 992px){
+    .col{
+        width: calc(100% / 3);
+    }
+    #profile{
+        display: none;
+    }
+    #calltoaction{
+        display: none;
+    }
+
+  }
+
+  @media screen and(max-width:768px) {
+ 
+    .col{
+        width: calc(100% / 2);
+    }
+    #profile{
+        display: none;
+    }
+  }
+
+  @media screen and (max-width:576px){
+    .main-content{
+        width: calc(100% - 60px);
+    }
+    .main-section{
+        width: 60%;
+    }
+    #profile{
+        display: none;
+    }
+    #calltoaction{
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 480px){
+    .col{
+        width: 100%;
+    }
+    #profile{
+        display: none;
+    }
+    #calltoaction{
+        display: none;
+    }
+  }
+  @media screen and(max-height:90px)  and (max-width:936px){
+    #calltoaction{
+        display: none;
+    }
+    
+  }

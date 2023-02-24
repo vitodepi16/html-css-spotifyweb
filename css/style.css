@@ -394,7 +394,6 @@ main {
     height:8px;
     width: 80%;
     outline: none;
-    /* transition: background 450ms ease-in; */
     -webkit-appearance: none;
     margin-top: 15px;
 }
@@ -422,8 +421,9 @@ main {
     height: 7px;
     width: 50%;
     outline: none;
-    transition: background 450ms ease-in;
+    transition: backgroud 450ms ease-in;
     -webkit-appearance: none;
     margin-top: 8px;
+    
   }
   
